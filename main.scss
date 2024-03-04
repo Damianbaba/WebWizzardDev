@@ -82,12 +82,13 @@ body {
       position: absolute;
       z-index: 30;
       line-height: 4rem;
-      top: calc(50% - 2rem);
+      top: calc(50% - 4rem);
       width: 100%;
       text-align: center;
-      font-size: 5rem;
+      font-size: 6rem;
       font-weight: 600;
       color: #fff;
+      z-index: 5;
     }
 
     .mountain1 {
@@ -322,15 +323,18 @@ body {
         bottom: -176px;
         width: 1692px;
         left: -690px;
+        
       }
       .mountain2 {
         width: 836px;
         bottom: -72px;
+        
       }
       .mountain3 {
         width: 1900px;
         bottom: 191px;
         left: -227px;
+        
       }
 
       .sky {
@@ -379,14 +383,17 @@ body {
       .mountain1 {
         bottom: -153px;
         width: 1847px;
+        z-index: 6;
       }
       .mountain2 {
         width: 836px;
         bottom: -191px;
+        z-index: 3;
       }
       .mountain3 {
         width: 1908px;
         bottom: 108px;
+        z-index: 2;
       }
 
       .sky {
