@@ -1,2 +1,4 @@
-passwords
+.DS_Store
 node_modules
+dist/
+passwords
