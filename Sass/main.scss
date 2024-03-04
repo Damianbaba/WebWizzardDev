@@ -201,6 +201,30 @@ body {
       }
     }
   }
+  // Section Scroller
+
+  // #scroller{
+  //   padding: 3rem;
+
+  //   .scroller{
+  //     max-width: 1280px;
+  //     &__inner{
+  //       padding: 1rem 0;
+  //       display: flex;
+  //       gap: 4rem;
+  //       flex-wrap: wrap;
+  //     }
+  //   }
+
+  //   &[data-animated="true"]{
+  //     overflow: hidden;
+  //     --webkit-mask:
+  //     linear-gradient
+  //   }
+  // }
+
+
+
 }
 
 @media (max-width: 600px) {
