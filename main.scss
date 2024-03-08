@@ -10,6 +10,7 @@ $transition-time: 2.3s;
 
 body {
   font-family: "Poppins", sans-serif;
+  color: black;
 
   header {
     width: 100%;
@@ -211,6 +212,7 @@ body {
         // align-items: center;
         // margin: 0 auto;
         scale: 1.25;
+        padding-left: 4rem;
 
         .card {
           height: 379px;
@@ -269,9 +271,9 @@ body {
               align-items: center;
               justify-content: space-around;
 
-
-              i{
+              i {
                 cursor: pointer;
+                color: white;
               }
 
               // h2 {
@@ -319,12 +321,13 @@ body {
     .header {
       padding-top: 3rem;
       text-align: center;
-      font-size: clamp(1.5rem, calc(1.5rem + 1.5vw), 5rem);
+      font-size: clamp(1.5rem, calc(1.5rem + 1.5vw), 2rem);
       padding-bottom: 2rem;
       color: white;
     }
     .stack {
-      max-width: 1550px;
+      max-width: 1100px;
+      // scale: 0.9;
       // outline: 3px solid lime;
 
       &__inner-wrapper {
@@ -334,7 +337,7 @@ body {
 
         &__inner {
           display: flex;
-          gap: 2rem;
+          gap: 1rem;
           flex-wrap: wrap;
 
           & img {
@@ -349,6 +352,9 @@ body {
 
           & li {
             min-width: 250px;
+            img{
+              scale: 0.7;
+            }
           }
         }
       }
