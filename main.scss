@@ -197,12 +197,111 @@ body {
         opacity: 0;
       }
 
-      .imgContainer {
-        transform: translateY(50px);
-        img {
-          width: 100%;
+      //  new image container style
+
+      .image-container {
+        // height: 679px;
+        // width: 600px;
+        // max-height: 800px;
+        // max-width: 1280px;
+        // min-height: 600px;
+        // min-width: 1000px;
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
+        // margin: 0 auto;
+        scale: 1.25;
+
+        .card {
+          height: 379px;
+          width: 300px;
+          background: grey;
+          border-radius: 10px;
+          transition: background 0.8s;
+          overflow: hidden;
+          background: black;
+          box-shadow: 0 70px 63px -60px #000000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          .border {
+            height: 369px;
+            width: 290px;
+            background: transparent;
+            border-radius: 10px;
+            transition: border 1s;
+            position: relative;
+
+            h2 {
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              color: white;
+              margin: 20px;
+              opacity: 0;
+              transition: opacity 1s;
+            }
+
+            .fa {
+              opacity: 0;
+              transition: opacity 1s;
+            }
+
+            &:hover {
+              border: 1px solid white;
+              h2 {
+                opacity: 1;
+              }
+              .fa {
+                opacity: 1;
+              }
+            }
+
+            .icons {
+              position: absolute;
+              fill: #fff;
+              color: #fff;
+              height: 130px;
+              top: 226px;
+              width: 50px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+
+
+              i{
+                cursor: pointer;
+              }
+
+              // h2 {
+              //   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              //   color: white;
+              //   margin: 20px;
+              //   opacity: 0;
+              //   transition: opacity 1s;
+              // }
+            }
+          }
+        }
+
+        .card0 {
+          background: url("./img/about.jpeg") center center no-repeat;
+          background-size: 300px;
+
+          &:hover {
+            background: url("./img/about.jpeg") left center no-repeat;
+            background-size: 600px;
+          }
         }
       }
+
+      // .imgContainer {
+      //   transform: translateY(50px);
+      //   img {
+      //     width: 100%;
+      //   }
+      // }
     }
   }
 
@@ -294,15 +393,20 @@ body {
   //  my service
 
   .projects {
+    background-color: #151515;
     .container {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
+      padding: 3rem 0;
       .row {
         align-items: center;
         height: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+        grid-template-columns: repeat(
+          2,
+          1fr
+        ); /* Two columns with equal width */
         gap: 10px; /* Gap between grid items */
 
         .card {
@@ -314,7 +418,6 @@ body {
           perspective: 1200px;
           padding: 20px;
           cursor: pointer;
-         
 
           &:hover {
             .cover {
@@ -351,6 +454,7 @@ body {
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
+            border-radius: 25px;
 
             &:before {
               content: "";
@@ -365,6 +469,7 @@ body {
               transition: ease all $transition-time;
               transform-style: preserve-3d;
               transform: translateZ(0px);
+              border-radius: 25px;
             }
 
             &:after {
@@ -377,6 +482,7 @@ body {
               z-index: 2;
               transition: ease all 1.3s;
               background: rgba(0, 0, 0, 0.4);
+              border-radius: 25px;
             }
 
             &.item-a {
@@ -400,7 +506,7 @@ body {
               transform-style: preserve-3d;
               transition: ease all $transition-time;
               z-index: 3;
-              font-size: 3em;
+              font-size: 2rem;
               transform: translateZ(0px);
             }
 
@@ -429,6 +535,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 25px;
 
             a {
               transform-style: preserve-3d;
