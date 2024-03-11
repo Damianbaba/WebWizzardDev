@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+body header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+body header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 30;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+}
+body header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+body header nav .container .logo {
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+body header nav .container .logo span {
+  font-weight: 300;
+}
+body header nav .container .hamburger-menu {
+  width: 1.55rem;
+  height: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body header nav .container .hamburger-menu .bar {
+  position: relative;
+  width: 1.2rem;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+body header nav .container .hamburger-menu .bar:before,
+body header nav .container .hamburger-menu .bar:after {
+  content: "";
+  position: absolute;
+  width: 1.55rem;
+  height: 3px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 2px;
+}
+body header nav .container .hamburger-menu .bar:before {
+  transform: translateY(-8px);
+}
+body header nav .container .hamburger-menu .bar:after {
+  transform: translateY(8px);
+}
+body header .big-title {
+  position: absolute;
+  z-index: 30;
+  line-height: 4rem;
+  top: calc(50% - 4rem);
+  width: 100%;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+  color: #fff;
+  z-index: 5;
+}
+body header .mountain1 {
+  position: absolute;
+  bottom: -143px;
+  /* bottom: -100px; */
+  width: 1483px;
+  /* width: 1500px; */
+  right: 0;
+  z-index: 19;
+}
+body header .person {
+  position: absolute;
+  width: 650px;
+  bottom: -100px;
+  left: -70px;
+  z-index: 20;
+}
+body header .mountain2 {
+  position: absolute;
+  width: 728px;
+  /* width: 1100px; */
+  bottom: -171px;
+  /* bottom: -100px; */
+  left: 0;
+  z-index: 18;
+}
+body header .mountain3 {
+  position: absolute;
+  /* width: 900px; */
+  width: 1489px;
+  /* bottom: 150px; */
+  bottom: 82px;
+  right: 0;
+  z-index: 17;
+}
+body header .sky {
+  position: absolute;
+  width: 2100px;
+  /* bottom: 250px; */
+  right: 0;
+}
+body header:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 25;
+}
+body .about {
+  width: 100%;
+  background-color: #151515;
+  position: relative;
+}
+body .about .shadow {
+  position: absolute;
+  bottom: 100%;
+  max-height: 300px;
+  width: 100%;
+  left: 0;
+  z-index: 20;
+  background: linear-gradient(to top, #151515, transparent);
+}
+body .about .container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body .about .container .content {
+  color: #fff;
+  transform: translateY(-50px);
+}
+body .about .container .content .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+body .about .container .content .title .border {
+  position: absolute;
+  max-width: 50%;
+  height: 3px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+}
+body .about .container .opacity {
+  opacity: 0;
+}
+body .about .container .image-container {
+  scale: 1.25;
+  padding-left: 4rem;
+}
+body .about .container .image-container .card {
+  height: 379px;
+  width: 300px;
+  background: grey;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body .about .container .image-container .card .border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+body .about .container .image-container .card .border h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+body .about .container .image-container .card .border .fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+body .about .container .image-container .card .border:hover {
+  border: 1px solid white;
+}
+body .about .container .image-container .card .border:hover h2 {
+  opacity: 1;
+}
+body .about .container .image-container .card .border:hover .fa {
+  opacity: 1;
+}
+body .about .container .image-container .card .border .icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body .about .container .image-container .card .border .icons i {
+  cursor: pointer;
+  color: white;
+}
+body .about .container .image-container .card0 {
+  background: url("./img/about.jpeg") center center no-repeat;
+  background-size: 300px;
+}
+body .about .container .image-container .card0:hover {
+  background: url("./img/about.jpeg") left center no-repeat;
+  background-size: 600px;
+}
+body #my-stack {
+  display: grid;
+  place-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+}
+body #my-stack .header {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: clamp(1.5rem, 1.5rem + 1.5vw, 2rem);
+  padding-bottom: 2rem;
+  color: white;
+}
+body #my-stack .stack {
+  max-width: 1100px;
+}
+body #my-stack .stack__inner-wrapper {
+  padding: 1rem 0;
+  display: flex;
+  gap: 4rem;
+}
+body #my-stack .stack__inner-wrapper__inner {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+body #my-stack .stack__inner-wrapper__inner img {
+  max-width: 100%;
+}
+body #my-stack .stack__inner-wrapper .img-list {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+body #my-stack .stack__inner-wrapper .img-list li {
+  min-width: 250px;
+}
+body #my-stack .stack__inner-wrapper .img-list li img {
+  scale: 0.7;
+}
+body #my-stack .stack[data-animated=true] {
+  overflow: hidden;
+  --webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 5%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 5%, white 80%, transparent);
+}
+body #my-stack .stack[data-animated=true] .stack__inner {
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duratoin, 40s) var(--_animation-direction, alternate) linear infinite;
+}
+body #my-stack .stack[data-duration=fast] {
+  --_animation-duratoin: 15s;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-70% - 0.5rem));
+  }
+}
+body .projects {
+  background-color: #151515;
+}
+body .projects .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+body .projects .container .row {
+  align-items: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 10px; /* Gap between grid items */
+}
+body .projects .container .row .card {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin: 10px 0;
+  transition: ease all 2.3s;
+  perspective: 1200px;
+  padding: 20px;
+  cursor: pointer;
+}
+body .projects .container .row .card:hover .cover {
+  transform: rotateX(0deg) rotateY(-180deg);
+}
+body .projects .container .row .card:hover .cover:before {
+  transform: translateZ(30px);
+}
+body .projects .container .row .card:hover .cover:after {
+  background-color: black;
+}
+body .projects .container .row .card:hover .cover h1 {
+  transform: translateZ(100px);
+}
+body .projects .container .row .card:hover .cover .price {
+  transform: translateZ(60px);
+}
+body .projects .container .row .card:hover .cover a {
+  transform: translateZ(-60px) rotatey(-180deg);
+}
+body .projects .container .row .card .cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+body .projects .container .row .card .cover:before {
+  content: "";
+  position: absolute;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  transition: ease all 2.3s;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+  border-radius: 25px;
+}
+body .projects .container .row .card .cover:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  transition: ease all 1.3s;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+}
+body .projects .container .row .card .cover.item-a {
+  background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
+}
+body .projects .container .row .card .cover.item-b {
+  background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80");
+}
+body .projects .container .row .card .cover.item-c {
+  background-image: url("https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80");
+}
+body .projects .container .row .card .cover h1 {
+  font-weight: 600;
+  position: absolute;
+  bottom: 55px;
+  left: 50px;
+  color: white;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 3;
+  font-size: 2rem;
+  transform: translateZ(0px);
+}
+body .projects .container .row .card .cover .price {
+  font-weight: 200;
+  position: absolute;
+  top: 55px;
+  right: 50px;
+  color: white;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 4;
+  font-size: 2em;
+  transform: translateZ(0px);
+}
+body .projects .container .row .card .card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #0b0f08;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  transform: translateZ(-1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+body .projects .container .row .card .card-back a {
+  transform-style: preserve-3d;
+  transition: ease transform 2.3s, ease background 0.5s;
+  transform: translateZ(-1px) rotatey(-180deg);
+  background: transparent;
+  border: 1px solid white;
+  font-weight: 200;
+  font-size: 1.3em;
+  color: white;
+  padding: 14px 32px;
+  outline: none;
+  text-decoration: none;
+}
+body .projects .container .row .card .card-back a:hover {
+  background-color: white;
+  color: #0b0f08;
+}
+body footer {
+  height: 50px;
+  margin-top: 25px;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  body header .big-title {
+    font-size: 3rem;
+  }
+  body section .container .content .title {
+    font-size: 1.2rem;
+  }
+  body section .container .content .text {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  body header .mountain1 {
+    bottom: -176px;
+    width: 1692px;
+    left: -690px;
+  }
+  body header .mountain2 {
+    width: 836px;
+    bottom: -72px;
+  }
+  body header .mountain3 {
+    width: 1900px;
+    bottom: 191px;
+    left: -227px;
+  }
+  body header .sky {
+    width: 1643px;
+    bottom: 34px;
+    left: -579px;
+  }
+  body .about .container {
+    grid-template-columns: 1fr;
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 1366px) {
+  body header .mountain1 {
+    bottom: -148px;
+    width: 1656px;
+  }
+  body header .mountain2 {
+    width: 836px;
+    bottom: -191px;
+  }
+  body header .mountain3 {
+    width: 1631px;
+    bottom: 121px;
+  }
+  body header .sky {
+    width: 1688px;
+    bottom: -69px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  body header .mountain1 {
+    bottom: -153px;
+    width: 1847px;
+    z-index: 6;
+  }
+  body header .mountain2 {
+    width: 836px;
+    bottom: -191px;
+    z-index: 3;
+  }
+  body header .mountain3 {
+    width: 1908px;
+    bottom: 108px;
+    z-index: 2;
+  }
+  body header .sky {
+    width: 2100px;
+    bottom: -164px;
+  }
+  body section .container {
+    max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    column-gap: 5rem;
+  }
+}
+
+/*# sourceMappingURL=test1.css.map */

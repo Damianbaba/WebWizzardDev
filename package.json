@@ -1,21 +1,22 @@
 {
   "name": "webwizzarddev",
   "version": "1.0.0",
-  "private": true,
-  "description": "",
+  "private": false,
+  "description": "Website",
   "main": "app.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:compile": "sass main.scss main.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.71.1"
+    "sass": "^1.71.1",
+    "vite-plugin-sass": "^0.1.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

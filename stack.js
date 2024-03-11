@@ -1,4 +1,4 @@
-import './main.scss';
+// import './main.scss';
 
 const scrollers = document.querySelectorAll('.stack');
 
