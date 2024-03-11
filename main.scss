@@ -22,68 +22,95 @@ body {
     position: relative;
     overflow: hidden;
 
-    nav {
+    // nav
+    nav{
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      padding: 1rem 0;
       z-index: 30;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+      font-size: 1.5rem;
 
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        max-width: 70rem;
-        padding: 0 2rem;
-        margin: 0 auto;
-
-        .logo {
-          color: #fff;
-          font-size: 1.1rem;
-          text-transform: uppercase;
-          font-weight: 600;
-          letter-spacing: 2px;
-          span {
-            font-weight: 300;
-          }
+      .container{
+        .navbar-toggler{
+          font-size: 2rem;
+          color: #b4a9a9;
         }
-        .hamburger-menu {
-          width: 1.55rem;
-          height: 1.5rem;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
 
-          .bar {
-            position: relative;
-            width: 1.2rem;
-            height: 3px;
-            background-color: #fff;
-            border-radius: 2px;
-          }
-          .bar:before,
-          .bar:after {
-            content: "";
-            position: absolute;
-            width: 1.55rem;
-            height: 3px;
-            right: 0;
-            background-color: #fff;
-            border-radius: 2px;
-          }
-          .bar:before {
-            transform: translateY(-8px);
-          }
-          .bar:after {
-            transform: translateY(8px);
-          }
+
+        .navbar-brand{
+          font-size: 2.25rem;
         }
+
       }
+
+      
+      
     }
+
+
+    // nav {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   padding: 1rem 0;
+    //   z-index: 30;
+    //   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+
+    //   .container {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+
+    //     max-width: 70rem;
+    //     padding: 0 2rem;
+    //     margin: 0 auto;
+
+    //     .logo {
+    //       color: #fff;
+    //       font-size: 1.1rem;
+    //       text-transform: uppercase;
+    //       font-weight: 600;
+    //       letter-spacing: 2px;
+    //       span {
+    //         font-weight: 300;
+    //       }
+    //     }
+    //     .hamburger-menu {
+    //       width: 1.55rem;
+    //       height: 1.5rem;
+    //       cursor: pointer;
+    //       display: flex;
+    //       align-items: center;
+    //       justify-content: flex-end;
+
+    //       .bar {
+    //         position: relative;
+    //         width: 1.2rem;
+    //         height: 3px;
+    //         background-color: #fff;
+    //         border-radius: 2px;
+    //       }
+    //       .bar:before,
+    //       .bar:after {
+    //         content: "";
+    //         position: absolute;
+    //         width: 1.55rem;
+    //         height: 3px;
+    //         right: 0;
+    //         background-color: #fff;
+    //         border-radius: 2px;
+    //       }
+    //       .bar:before {
+    //         transform: translateY(-8px);
+    //       }
+    //       .bar:after {
+    //         transform: translateY(8px);
+    //       }
+    //     }
+    //   }
+    // }
     .big-title {
       position: absolute;
       z-index: 30;
@@ -520,17 +547,20 @@ body {
           3,
           1fr
         ); /* Two columns with equal width */
-        gap: 10px; /* Gap between grid items */
+        gap: 20px; /* Gap between grid items */
+        border: none;
+        
 
         .card {
           position: relative;
           height: 400px;
           width: 100%;
-          margin: 10px 0;
-          transition: ease all $transition-time;
+          // margin: 10px 0;
+          // transition: ease all $transition-time;
           perspective: 1200px;
-          padding: 20px;
+          // padding: 20px;
           cursor: pointer;
+          background-color: #151515;
 
           &:hover {
             .cover {
