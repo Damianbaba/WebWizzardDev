@@ -445,22 +445,13 @@ body .projects .container .row .card .card-back {
   justify-content: center;
   border-radius: 25px;
 }
-body .projects .container .row .card .card-back a {
-  transform-style: preserve-3d;
-  transition: ease transform 2.3s, ease background 0.5s;
-  transform: translateZ(-1px) rotatey(-180deg);
-  background: transparent;
-  border: 1px solid white;
-  font-weight: 200;
-  font-size: 1.3em;
-  color: white;
-  padding: 14px 32px;
-  outline: none;
-  text-decoration: none;
+body .projects .container .row .card .card-back .description {
+  width: 90%;
 }
-body .projects .container .row .card .card-back a:hover {
-  background-color: white;
-  color: #0b0f08;
+body .projects .container .row .card .card-back .description .text {
+  color: white;
+  transform: rotateY(-180deg);
+  font-size: 1.3rem;
 }
 body footer {
   font-family: Poppins, sans-serif;
