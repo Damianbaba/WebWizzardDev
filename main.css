@@ -159,6 +159,9 @@ body .about .container .image-container .card {
   justify-content: center;
   align-items: center;
   position: relative;
+  background: url("./img/about.jpeg") center center no-repeat;
+  background-size: 300px;
+  border-style: none;
 }
 body .about .container .image-container .card .border {
   height: 369px;
@@ -167,6 +170,7 @@ body .about .container .image-container .card .border {
   border-radius: 10px;
   transition: border 1s;
   position: relative;
+  opacity: 0;
 }
 body .about .container .image-container .card .border h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -181,6 +185,8 @@ body .about .container .image-container .card .border .fa {
 }
 body .about .container .image-container .card .border:hover {
   border: 1px solid white;
+  opacity: 1;
+  transition: opacity 1s;
 }
 body .about .container .image-container .card .border:hover h2 {
   opacity: 1;
@@ -204,12 +210,8 @@ body .about .container .image-container .card .border .icons i {
   cursor: pointer;
   color: white;
 }
-body .about .container .image-container .card0 {
-  background: url("./img/about.jpeg") center center no-repeat;
-  background-size: 300px;
-}
 body .about .container .image-container .card0:hover {
-  background: url("./img/about.jpeg") left center no-repeat;
+  background: url("./img/about.jpeg") left top no-repeat;
   background-size: 600px;
 }
 body #my-stack {
