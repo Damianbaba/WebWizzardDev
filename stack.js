@@ -8,7 +8,6 @@ function addAnimation() {
 		// add data-animated="true" to every `.scroller` on the page
 		scroller.setAttribute("data-animated", true);
 
-
 		const scrollerInnerWrapper = scroller.querySelector('.stack__inner-wrappper');
 		const scrollerInner = scroller.querySelector('.stack__inner');
 		const scrollerInnerContent = Array.from(scrollerInner.children);
