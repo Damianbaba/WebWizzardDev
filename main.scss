@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import "mdb-ui-kit/css/mdb.min.css";
 
 $transition-time: 2.3s;
 
@@ -23,6 +24,7 @@ body {
     overflow: hidden;
 
     // nav
+
     nav{
       position: absolute;
       top: 0;
@@ -30,6 +32,7 @@ body {
       width: 100%;
       z-index: 30;
       font-size: 1.5rem;
+      font-family: "Poppins", sans-serif;
 
       .container{
         .navbar-toggler{
@@ -38,10 +41,10 @@ body {
         }
         .navbar-brand{
           font-size: 2.25rem;
+          text-transform: none;
         }
       }
     }
-
 
     // nav {
     //   position: absolute;
@@ -302,7 +305,6 @@ body {
               }
             }
           }
-
         }
 
         .card0 {
@@ -585,13 +587,13 @@ body {
     }
   }
 
-  footer {
-    font-family: Poppins, sans-serif;
-    height: 50px;
-    margin-top: 25px;
-    text-align: center;
-    padding: 1rem;
-  }
+  // footer {
+  //   font-family: Poppins, sans-serif;
+  //   height: 50px;
+  //   margin-top: 25px;
+  //   text-align: center;
+  //   padding: 1rem;
+  // }
 }
 
 @media (max-width: 600px) {
