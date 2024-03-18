@@ -35,6 +35,8 @@ window.addEventListener('scroll', () => {
 
 })
 
+AOS.init();
+
 
 
 // eventListener stops at 713px

@@ -44,69 +44,6 @@ body {
         }
       }
     }
-
-    // nav {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   padding: 1rem 0;
-    //   z-index: 30;
-    //   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
-
-    //   .container {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-
-    //     max-width: 70rem;
-    //     padding: 0 2rem;
-    //     margin: 0 auto;
-
-    //     .logo {
-    //       color: #fff;
-    //       font-size: 1.1rem;
-    //       text-transform: uppercase;
-    //       font-weight: 600;
-    //       letter-spacing: 2px;
-    //       span {
-    //         font-weight: 300;
-    //       }
-    //     }
-    //     .hamburger-menu {
-    //       width: 1.55rem;
-    //       height: 1.5rem;
-    //       cursor: pointer;
-    //       display: flex;
-    //       align-items: center;
-    //       justify-content: flex-end;
-
-    //       .bar {
-    //         position: relative;
-    //         width: 1.2rem;
-    //         height: 3px;
-    //         background-color: #fff;
-    //         border-radius: 2px;
-    //       }
-    //       .bar:before,
-    //       .bar:after {
-    //         content: "";
-    //         position: absolute;
-    //         width: 1.55rem;
-    //         height: 3px;
-    //         right: 0;
-    //         background-color: #fff;
-    //         border-radius: 2px;
-    //       }
-    //       .bar:before {
-    //         transform: translateY(-8px);
-    //       }
-    //       .bar:after {
-    //         transform: translateY(8px);
-    //       }
-    //     }
-    //   }
-    // }
     .big-title {
       position: absolute;
       z-index: 30;
@@ -129,15 +66,6 @@ body {
       right: 0;
       z-index: 19;
     }
-
-    // .person {
-    //   position: absolute;
-    //   width: 650px;
-    //   bottom: -100px;
-    //   left: -70px;
-    //   z-index: 20;
-    // }
-
     .mountain2 {
       position: absolute;
       width: 836px;
@@ -233,7 +161,8 @@ body {
       //  new image container style
 
       .image-container {
-        scale: 1.25;
+        // scale: 1.25;
+        scale: 1.5;
         padding-left: 12rem;
 
         .card {
@@ -331,7 +260,7 @@ body {
 }
 .header {
   text-align: center;
-  font-size: clamp(1.5rem, calc(1.5rem + 1.5vw), 5rem);
+  font-size: clamp(1.5rem, calc(1.5rem + 1.5vw), 2rem);
   padding-bottom: 2rem;
   color: #fff;
 }
@@ -586,14 +515,6 @@ body {
       }
     }
   }
-
-  // footer {
-  //   font-family: Poppins, sans-serif;
-  //   height: 50px;
-  //   margin-top: 25px;
-  //   text-align: center;
-  //   padding: 1rem;
-  // }
 }
 
 //  Media queries
@@ -602,29 +523,6 @@ body {
 
 @media screen and (max-width: 1920px) {
   body {
-    // header {
-    //   .mountain1 {
-    //     bottom: -153px;
-    //     width: 1847px;
-    //     z-index: 6;
-    //   }
-    //   .mountain2 {
-    //     width: 836px;
-    //     bottom: -191px;
-    //     z-index: 3;
-    //   }
-    //   .mountain3 {
-    //     width: 1908px;
-    //     bottom: 108px;
-    //     z-index: 2;
-    //   }
-
-    //   .sky {
-    //     width: 2100px;
-    //     bottom: -164px;
-    //   }
-    // }
-
     section {
       .container {
         max-width: 85rem;

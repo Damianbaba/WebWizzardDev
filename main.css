@@ -139,7 +139,7 @@ body .about .container .opacity {
   opacity: 0;
 }
 body .about .container .image-container {
-  scale: 1.25;
+  scale: 1.5;
   padding-left: 12rem;
 }
 body .about .container .image-container .card {
@@ -220,7 +220,7 @@ body #my-stack {
 }
 body .header {
   text-align: center;
-  font-size: clamp(1.5rem, 1.5rem + 1.5vw, 5rem);
+  font-size: clamp(1.5rem, 1.5rem + 1.5vw, 4rem);
   padding-bottom: 2rem;
   color: #fff;
 }
