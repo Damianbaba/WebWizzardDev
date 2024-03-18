@@ -49,41 +49,35 @@ body header .big-title {
 }
 body header .mountain1 {
   position: absolute;
-  bottom: -143px;
-  /* bottom: -100px; */
-  width: 1483px;
-  /* width: 1500px; */
+  bottom: -153px;
+  /* bottom: -143px; */
+  width: 1847px;
+  /* width: 1483px; */
   right: 0;
   z-index: 19;
 }
-body header .person {
-  position: absolute;
-  width: 650px;
-  bottom: -100px;
-  left: -70px;
-  z-index: 20;
-}
 body header .mountain2 {
   position: absolute;
-  width: 728px;
-  /* width: 1100px; */
-  bottom: -171px;
-  /* bottom: -100px; */
+  width: 836px;
+  /* width: 728px; */
+  bottom: -191px;
+  /* bottom: -171px; */
   left: 0;
   z-index: 18;
 }
 body header .mountain3 {
   position: absolute;
-  /* width: 900px; */
-  width: 1489px;
-  /* bottom: 150px; */
-  bottom: 82px;
+  width: 1903px;
+  /* width: 1489px; */
+  bottom: 108px;
+  /* bottom: 82px; */
   right: 0;
   z-index: 17;
 }
 body header .sky {
   position: absolute;
   width: 2100px;
+  bottom: -164px;
   /* bottom: 250px; */
   right: 0;
 }
@@ -414,43 +408,18 @@ body .projects .container .row .card .card-back .description .text {
   font-size: 1.3rem;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 1920px) {
+  body section .container {
+    max-width: 85rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    column-gap: 5rem;
+  }
+}
+@media (max-width: 1366px) {
   body header .big-title {
-    font-size: 3rem;
+    top: calc(50% - 15rem);
   }
-  body section .container .content .title {
-    font-size: 1.2rem;
-  }
-  body section .container .content .text {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 850px) {
-  body header .mountain1 {
-    bottom: -176px;
-    width: 1692px;
-    left: -690px;
-  }
-  body header .mountain2 {
-    width: 836px;
-    bottom: -72px;
-  }
-  body header .mountain3 {
-    width: 1900px;
-    bottom: 191px;
-    left: -227px;
-  }
-  body header .sky {
-    width: 1643px;
-    bottom: 34px;
-    left: -579px;
-  }
-  body .about .container {
-    grid-template-columns: 1fr;
-    margin: 2rem;
-  }
-}
-@media screen and (max-width: 1366px) {
   body header .mountain1 {
     bottom: -148px;
     width: 1656px;
@@ -467,32 +436,112 @@ body .projects .container .row .card .card-back .description .text {
     width: 1688px;
     bottom: -69px;
   }
+  body .about .container {
+    scale: 0.7;
+  }
+  body #my-stack {
+    padding: 0 2rem;
+  }
+  body #my-stack .stack {
+    scale: 0.5;
+  }
+  body .projects {
+    padding: 0 2rem;
+  }
+  body .projects .container {
+    padding: 0;
+    scale: 0.6;
+  }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 800px) {
   body header .mountain1 {
-    bottom: -153px;
-    width: 1847px;
-    z-index: 6;
+    bottom: -211px;
+    left: -860px;
   }
   body header .mountain2 {
-    width: 836px;
-    bottom: -191px;
-    z-index: 3;
+    bottom: -72px;
   }
   body header .mountain3 {
-    width: 1908px;
-    bottom: 108px;
-    z-index: 2;
+    bottom: 59px;
   }
   body header .sky {
-    width: 2100px;
-    bottom: -164px;
+    bottom: 247px;
+    left: -579px;
   }
-  body section .container {
-    max-width: 85rem;
-    padding: 0 2rem;
+  body .about .container {
+    grid-template-columns: 1fr;
+    margin: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  body header .big-title {
+    top: calc(50% - 12rem);
+    font-size: 4.5rem;
+  }
+  body header .mountain1 {
+    left: -1056px;
+  }
+  body header .mountain2 {
+    bottom: -175px;
+  }
+  body header .mountain3 {
+    bottom: 137px;
+    left: -4px;
+  }
+  body header .sky {
+    bottom: -74px;
+  }
+  body .about .container {
+    margin: 0;
+  }
+  body .about .container .content .title {
+    font-size: 2.2rem;
+  }
+  body .about .container .content .text {
+    font-size: 1.5rem;
+  }
+  body .about .container .image-container {
+    padding: 0;
     margin: 0 auto;
-    column-gap: 5rem;
+    scale: 1.5;
+  }
+  body .projects .container {
+    padding: 2rem 0;
+    scale: 1;
+  }
+  body .projects .container .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 420px) {
+  body header .big-title {
+    top: calc(50% - 12rem);
+    font-size: 3rem;
+  }
+  body header .mountain1 {
+    left: -1229px;
+  }
+  body header .mountain2 {
+    bottom: -175px;
+  }
+  body header .mountain3 {
+    bottom: 137px;
+    left: -4px;
+  }
+  body header .sky {
+    bottom: -74px;
+  }
+  body .about .container {
+    margin: 0;
+  }
+  body .about .container .image-container {
+    padding: 0;
+  }
+  body .projects .container {
+    scale: 0.9;
+  }
+  body .projects .container .row {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
