@@ -582,7 +582,7 @@ body {
     }
   }
 }
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   body {
     header {
       .mountain1 {
@@ -613,6 +613,40 @@ body {
     }
   }
 }
+
+
+
+@media(max-width: 768px){
+body{
+  header{
+    .sky{
+      bottom: -56px;
+    }
+    .mountain3{
+      bottom: 144px;
+      left: -431px;
+    }
+    .mountain2{
+      bottom: -129px;
+    }
+    .mountain1{
+      bottom: -142px;
+      left: -808px;
+    }
+
+
+
+
+    }
+  }
+
+
+
+
+
+}
+
+
 @media (max-width: 600px) {
   body {
     header{

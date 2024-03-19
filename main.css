@@ -220,7 +220,7 @@ body #my-stack {
 }
 body .header {
   text-align: center;
-  font-size: clamp(1.5rem, 1.5rem + 1.5vw, 4rem);
+  font-size: clamp(1.5rem, 1.5rem + 1.5vw, 2rem);
   padding-bottom: 2rem;
   color: #fff;
 }
@@ -453,7 +453,7 @@ body .projects .container .row .card .card-back .description .text {
     scale: 0.6;
   }
 }
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   body header .mountain1 {
     bottom: -211px;
     left: -860px;
@@ -471,6 +471,22 @@ body .projects .container .row .card .card-back .description .text {
   body .about .container {
     grid-template-columns: 1fr;
     margin: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  body header .sky {
+    bottom: -56px;
+  }
+  body header .mountain3 {
+    bottom: 144px;
+    left: -431px;
+  }
+  body header .mountain2 {
+    bottom: -129px;
+  }
+  body header .mountain1 {
+    bottom: -142px;
+    left: -808px;
   }
 }
 @media (max-width: 600px) {
