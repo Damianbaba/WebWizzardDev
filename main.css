@@ -354,13 +354,7 @@ body .projects .container .row .card .cover:after {
   border-radius: 25px;
 }
 body .projects .container .row .card .cover.item-a {
-  background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
-}
-body .projects .container .row .card .cover.item-b {
-  background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80");
-}
-body .projects .container .row .card .cover.item-c {
-  background-image: url("https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80");
+  background-image: url("./img/black.jpg");
 }
 body .projects .container .row .card .cover h1 {
   font-weight: 600;
@@ -406,6 +400,12 @@ body .projects .container .row .card .card-back .description .text {
   color: white;
   transform: rotateY(-180deg);
   font-size: 1.3rem;
+}
+body .bg-image {
+  background-image: url("./img/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1920px) {
