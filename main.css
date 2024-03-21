@@ -401,7 +401,12 @@ body .projects .container .row .card .card-back .description .text {
   transform: rotateY(-180deg);
   font-size: 1.3rem;
 }
-body .bg-image {
+body .contact-form {
+  background-image: url("./img/matrix.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body .contact-form .bg-image {
   background-image: url("./img/contact.jpg");
   background-size: cover;
   background-position: center;
