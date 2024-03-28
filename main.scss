@@ -47,51 +47,67 @@ body {
     .big-title {
       position: absolute;
       z-index: 30;
-      line-height: 4rem;
-      top: calc(50% - 4rem);
-      width: 100%;
+      line-height: 7rem;
+      top: calc(50% - 13rem);
+      left: 412px;
+      // width: 100%;
+      max-width: 800px;
       text-align: center;
-      font-size: 6rem;
-      font-weight: 600;
-      color: #fff;
+      font-size: 7rem;
+      // font-weight: 600;
+      // color: #fff;
       z-index: 5;
+      font-weight: bold;
+
+      /* Setting the gradient */
+      background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+      background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+      // background: -webkit-linear-gradient(90deg, #352F44 0%, #5C5470 25%, #B9B4C7 75%, #FFE7BF 100%);
+      // background: linear-gradient(90deg, #352F44 0%, #5C5470 25%, #B9B4C7 75%, #FFE7BF 100%);
+      
+      /* Making the background clip to the text for a gradient effect */
+      -webkit-background-clip: text;
+      background-clip: text;
+    
+      /* Making the text color transparent, so the gradient shows */
+      -webkit-text-fill-color: transparent; /* for Chrome and Safari */
+      color: transparent; /* Standard: Fallback for other browsers */
+
+
+
     }
 
     .mountain1 {
       position: absolute;
-      bottom: -153px;
-      /* bottom: -143px; */
-      width: 1847px;
-      /* width: 1483px; */
-      right: 0;
+      bottom: -175px;
+      width: 1920px;
+      right: -137px;
       z-index: 19;
     }
     .mountain2 {
       position: absolute;
-      width: 836px;
-      /* width: 728px; */
-      bottom: -191px;
-      /* bottom: -171px; */
-      left: 0;
+      width: 1920px;
+      bottom: -657px;
+      left: -690px;
       z-index: 18;
+      scale: 0.3;
     }
 
     .mountain3 {
       position: absolute;
-      width: 1903px;
-      /* width: 1489px; */
-      bottom: 108px;
-      /* bottom: 82px; */
-      right: 0;
+      width: 1920px;
+      bottom: 166px;
+      right: -5px;
       z-index: 17;
+      scale: 1.1;
     }
 
     .sky {
       position: absolute;
-      width: 2100px;
-      bottom: -164px;
-      /* bottom: 250px; */
-      right: 0;
+      width: 1920px;
+      top: -134px;
+      right: -5px;
+      scale: 1.1;
     }
   }
   header:after {
@@ -107,8 +123,7 @@ body {
 
   .about {
     width: 100%;
-    // max-height: 100vh;
-    background-color: #151515;
+    background-color: #d5d6e0;
     position: relative;
 
     .shadow {
@@ -135,23 +150,39 @@ body {
 
         .title {
           font-weight: 600;
-          font-size: 2.5rem;
-          margin-bottom: 1rem;
+          font-size: 3.5rem;
+          margin-bottom: 4rem;
           padding-bottom: 0.5rem;
           position: relative;
+
+          // gradient
+
+          font-weight: bold;
+          /* Setting the gradient */
+          background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+          background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+          
+          /* Making the background clip to the text for a gradient effect */
+          -webkit-background-clip: text;
+          background-clip: text;
+        
+          /* Making the text color transparent, so the gradient shows */
+          -webkit-text-fill-color: transparent; /* for Chrome and Safari */
+          color: transparent; /* Standard: Fallback for other browsers */
 
           .border {
             position: absolute;
             max-width: 50%;
-            height: 3px;
-            background-color: #fff;
+            height: 5px;
+            background-color: #000;
             bottom: 0;
             left: 0;
           }
         }
 
         .text{
-          font-size: 1.5rem;
+          font-size: 2rem;
+          color: #000;
         }
       }
       .opacity {
@@ -161,9 +192,10 @@ body {
       //  new image container style
 
       .image-container {
-        // scale: 1.25;
         scale: 1.5;
-        padding-left: 12rem;
+        width: 300px;
+        position: relative;
+        left: 251px;
 
         .card {
           height: 379px;
@@ -256,13 +288,35 @@ body {
   place-content: center;
   font-family: Poppins, sans-serif;
   font-size: 1.125rem;
-  background-color: #151515;
+  background-color: #a49e9e;
 }
 .header {
   text-align: center;
   font-size: clamp(1.5rem, calc(1.5rem + 1.5vw), 2rem);
   padding-bottom: 2rem;
   color: #fff;
+
+  font-weight: bold;
+
+  /* Setting the gradient */
+  background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  // background: -webkit-linear-gradient(90deg, #352F44 0%, #5C5470 25%, #B9B4C7 75%, #FFE7BF 100%);
+  // background: linear-gradient(90deg, #352F44 0%, #5C5470 25%, #B9B4C7 75%, #FFE7BF 100%);
+  
+  /* Making the background clip to the text for a gradient effect */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Making the text color transparent, so the gradient shows */
+  -webkit-text-fill-color: transparent; /* for Chrome and Safari */
+  color: transparent; /* Standard: Fallback for other browsers */
+
+
+
+
+
+
 }
 .img-list {
   list-style: none;
@@ -337,7 +391,7 @@ body {
   //  my service
 
   .projects {
-    background-color: #151515;
+    background-color: #d5d6e0;
     .container {
       width: 90%;
       max-width: 1200px;
@@ -354,16 +408,18 @@ body {
         gap: 20px; /* Gap between grid items */
         border: none;
         
+        
         .card {
           position: relative;
           height: 400px;
           width: 100%;
-          // margin: 10px 0;
           // transition: ease all $transition-time;
           perspective: 1200px;
-          // padding: 20px;
           cursor: pointer;
-          background-color: #151515;
+          background-color: #d5d6e0;
+          border-radius: 25px;
+          border: none;
+          padding: 0;
 
           &:hover {
             .cover {
@@ -433,18 +489,32 @@ body {
 
             &.item-a {
               // background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
-              background-image: url("./img/black.jpg");
+              background-image: url("./img/service/Custom.webp");
             }
 
-            // &.item-b {
-            //   // background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80");
-            //   // background-image: url("./img/black.jpg");
-            // }
+            &.item-b {
+              // background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80");
+              background-image: url("./img/service/wp.webp");
+            }
 
-            // &.item-c {
-            //   // background-image: url("https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80");
-            //   // background-image: url("./img/black.jpg");
-            // }
+            &.item-c {
+              // background-image: url("https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80");
+              background-image: url("./img/service/shopify.webp");
+            }
+            &.item-d {
+              // background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
+              background-image: url("./img/service/rd.webp");
+            }
+
+            &.item-e {
+              // background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80");
+              background-image: url("./img/service/seo.webp");
+            }
+
+            &.item-f {
+              // background-image: url("https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80");
+              background-image: url("./img/service/support.webp");
+            }
 
             h1 {
               font-weight: 600;
@@ -523,7 +593,7 @@ body {
     background-size: cover;
     background-position: center;
   .bg-image {
-    background-image: url('./img/contact.jpg');
+    background-image: url('./img/webcraftwizard.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -541,7 +611,7 @@ body {
   body {
     section {
       .container {
-        max-width: 85rem;
+        max-width: 100rem;
         padding: 0 2rem;
         margin: 0 auto;
         column-gap: 5rem;

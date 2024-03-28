@@ -38,48 +38,53 @@ body header nav .container .navbar-brand {
 body header .big-title {
   position: absolute;
   z-index: 30;
-  line-height: 4rem;
-  top: calc(50% - 4rem);
-  width: 100%;
+  line-height: 7rem;
+  top: calc(50% - 13rem);
+  left: 412px;
+  max-width: 800px;
   text-align: center;
-  font-size: 6rem;
-  font-weight: 600;
-  color: #fff;
+  font-size: 7rem;
   z-index: 5;
+  font-weight: bold;
+  /* Setting the gradient */
+  background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  /* Making the background clip to the text for a gradient effect */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Making the text color transparent, so the gradient shows */
+  -webkit-text-fill-color: transparent; /* for Chrome and Safari */
+  color: transparent; /* Standard: Fallback for other browsers */
 }
 body header .mountain1 {
   position: absolute;
-  bottom: -153px;
-  /* bottom: -143px; */
-  width: 1847px;
-  /* width: 1483px; */
-  right: 0;
+  bottom: -175px;
+  width: 1920px;
+  right: -137px;
   z-index: 19;
 }
 body header .mountain2 {
   position: absolute;
-  width: 836px;
-  /* width: 728px; */
-  bottom: -191px;
-  /* bottom: -171px; */
-  left: 0;
+  width: 1920px;
+  bottom: -657px;
+  left: -690px;
   z-index: 18;
+  scale: 0.3;
 }
 body header .mountain3 {
   position: absolute;
-  width: 1903px;
-  /* width: 1489px; */
-  bottom: 108px;
-  /* bottom: 82px; */
-  right: 0;
+  width: 1920px;
+  bottom: 166px;
+  right: -5px;
   z-index: 17;
+  scale: 1.1;
 }
 body header .sky {
   position: absolute;
-  width: 2100px;
-  bottom: -164px;
-  /* bottom: 250px; */
-  right: 0;
+  width: 1920px;
+  top: -134px;
+  right: -5px;
+  scale: 1.1;
 }
 body header:after {
   content: "";
@@ -93,7 +98,7 @@ body header:after {
 }
 body .about {
   width: 100%;
-  background-color: #151515;
+  background-color: #d5d6e0;
   position: relative;
 }
 body .about .shadow {
@@ -119,28 +124,41 @@ body .about .container .content {
 }
 body .about .container .content .title {
   font-weight: 600;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
   padding-bottom: 0.5rem;
   position: relative;
+  font-weight: bold;
+  /* Setting the gradient */
+  background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  /* Making the background clip to the text for a gradient effect */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Making the text color transparent, so the gradient shows */
+  -webkit-text-fill-color: transparent; /* for Chrome and Safari */
+  color: transparent; /* Standard: Fallback for other browsers */
 }
 body .about .container .content .title .border {
   position: absolute;
   max-width: 50%;
-  height: 3px;
-  background-color: #fff;
+  height: 5px;
+  background-color: #000;
   bottom: 0;
   left: 0;
 }
 body .about .container .content .text {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #000;
 }
 body .about .container .opacity {
   opacity: 0;
 }
 body .about .container .image-container {
   scale: 1.5;
-  padding-left: 12rem;
+  width: 300px;
+  position: relative;
+  left: 251px;
 }
 body .about .container .image-container .card {
   height: 379px;
@@ -216,13 +234,23 @@ body #my-stack {
   place-content: center;
   font-family: Poppins, sans-serif;
   font-size: 1.125rem;
-  background-color: #151515;
+  background-color: #a49e9e;
 }
 body .header {
   text-align: center;
   font-size: clamp(1.5rem, 1.5rem + 1.5vw, 2rem);
   padding-bottom: 2rem;
   color: #fff;
+  font-weight: bold;
+  /* Setting the gradient */
+  background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  /* Making the background clip to the text for a gradient effect */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Making the text color transparent, so the gradient shows */
+  -webkit-text-fill-color: transparent; /* for Chrome and Safari */
+  color: transparent; /* Standard: Fallback for other browsers */
 }
 body .img-list {
   list-style: none;
@@ -273,7 +301,7 @@ body .stack[data-duration=fast] {
   }
 }
 body .projects {
-  background-color: #151515;
+  background-color: #d5d6e0;
 }
 body .projects .container {
   width: 90%;
@@ -295,7 +323,10 @@ body .projects .container .row .card {
   width: 100%;
   perspective: 1200px;
   cursor: pointer;
-  background-color: #151515;
+  background-color: #d5d6e0;
+  border-radius: 25px;
+  border: none;
+  padding: 0;
 }
 body .projects .container .row .card:hover .cover {
   transform: rotateX(0deg) rotateY(-180deg);
@@ -354,7 +385,22 @@ body .projects .container .row .card .cover:after {
   border-radius: 25px;
 }
 body .projects .container .row .card .cover.item-a {
-  background-image: url("./img/black.jpg");
+  background-image: url("./img/service/Custom.webp");
+}
+body .projects .container .row .card .cover.item-b {
+  background-image: url("./img/service/wp.webp");
+}
+body .projects .container .row .card .cover.item-c {
+  background-image: url("./img/service/shopify.webp");
+}
+body .projects .container .row .card .cover.item-d {
+  background-image: url("./img/service/rd.webp");
+}
+body .projects .container .row .card .cover.item-e {
+  background-image: url("./img/service/seo.webp");
+}
+body .projects .container .row .card .cover.item-f {
+  background-image: url("./img/service/support.webp");
 }
 body .projects .container .row .card .cover h1 {
   font-weight: 600;
@@ -407,7 +453,7 @@ body .contact-form {
   background-position: center;
 }
 body .contact-form .bg-image {
-  background-image: url("./img/contact.jpg");
+  background-image: url("./img/webcraftwizard.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -415,7 +461,7 @@ body .contact-form .bg-image {
 
 @media screen and (max-width: 1920px) {
   body section .container {
-    max-width: 85rem;
+    max-width: 100rem;
     padding: 0 2rem;
     margin: 0 auto;
     column-gap: 5rem;
