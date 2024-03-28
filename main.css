@@ -537,29 +537,33 @@ body .contact-form .container-fluid .bg-image {
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
+    height: auto;
     max-width: 100%;
-    scale: 1.1;
-    left: -23px;
-    bottom: -103px;
+    bottom: -118px;
   }
   body header .mountain2 {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: auto;
     max-width: 100%;
-    top: 37px;
+    top: 220px;
+    left: -90px;
   }
   body header .mountain3 {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: auto;
     max-width: 100%;
-    scale: 1.1;
+    top: 35px;
   }
   body header .sky {
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
+    height: auto;
     max-width: 100%;
-    scale: 1.1;
-    left: 3px;
-    top: 5px;
   }
 }
 @media (max-width: 800px) {
