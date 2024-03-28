@@ -58,33 +58,37 @@ body header .big-title {
 }
 body header .mountain1 {
   position: absolute;
-  bottom: -175px;
-  width: 1920px;
-  right: -137px;
+  bottom: -153px;
+  max-width: 1920px;
+  height: auto;
+  right: -53px;
   z-index: 19;
+  scale: 1.3;
 }
 body header .mountain2 {
   position: absolute;
-  width: 1920px;
-  bottom: -657px;
-  left: -690px;
+  max-width: 1920px;
+  height: auto;
+  bottom: -170px;
+  left: 3px;
   z-index: 18;
-  scale: 0.3;
+  scale: 1.2;
 }
 body header .mountain3 {
   position: absolute;
-  width: 1920px;
-  bottom: 166px;
+  max-width: 1920px;
+  height: auto;
+  bottom: 152px;
   right: -5px;
   z-index: 17;
-  scale: 1.1;
+  scale: 1.3;
 }
 body header .sky {
   position: absolute;
-  width: 1920px;
-  top: -134px;
+  height: auto;
+  top: -121px;
   right: -5px;
-  scale: 1.1;
+  scale: 1.3;
 }
 body header:after {
   content: "";
@@ -448,11 +452,14 @@ body .projects .container .row .card .card-back .description .text {
   font-size: 1.3rem;
 }
 body .contact-form {
-  background-image: url("./img/matrix.jpg");
   background-size: cover;
   background-position: center;
+  background-color: #a49e9e;
 }
-body .contact-form .bg-image {
+body .contact-form .container-fluid {
+  max-width: 1000px;
+}
+body .contact-form .container-fluid .bg-image {
   background-image: url("./img/webcraftwizard.webp");
   background-size: cover;
   background-position: center;
@@ -472,20 +479,41 @@ body .contact-form .bg-image {
     top: calc(50% - 15rem);
   }
   body header .mountain1 {
-    bottom: -148px;
-    width: 1656px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    bottom: -121px;
+    left: 88px;
+    scale: 0.9;
   }
   body header .mountain2 {
-    width: 836px;
-    bottom: -191px;
+    height: auto;
+    max-width: 100%;
+    top: 260px;
+    left: -70px;
+    scale: 0.9;
   }
   body header .mountain3 {
-    width: 1631px;
-    bottom: 121px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    bottom: 95px;
+    right: 0;
+    scale: 1;
   }
   body header .sky {
-    width: 1688px;
-    bottom: -69px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    top: -90px;
+    right: 0;
+    scale: 1;
   }
   body .about .container {
     scale: 0.7;
@@ -504,18 +532,68 @@ body .contact-form .bg-image {
     scale: 0.6;
   }
 }
+@media (max-width: 1280px) {
+  body header .mountain1 {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    scale: 1.1;
+    left: -23px;
+    bottom: -103px;
+  }
+  body header .mountain2 {
+    max-width: 100%;
+    top: 37px;
+  }
+  body header .mountain3 {
+    max-width: 100%;
+    scale: 1.1;
+  }
+  body header .sky {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    scale: 1.1;
+    left: 3px;
+    top: 5px;
+  }
+}
 @media (max-width: 800px) {
   body header .mountain1 {
     bottom: -211px;
     left: -860px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
   }
   body header .mountain2 {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
     bottom: -72px;
   }
   body header .mountain3 {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
     bottom: 59px;
   }
   body header .sky {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
     bottom: 247px;
     left: -579px;
   }
