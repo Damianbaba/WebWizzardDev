@@ -54,13 +54,7 @@
       white 80%,
       transparent
     );
-    mask: linear-gradient(
-      90deg,
-      transparent,
-      white 5%,
-      white 80%,
-      transparent
-    );
+    mask: linear-gradient(90deg, transparent, white 5%, white 80%, transparent);
 
     & .stack__inner {
       flex-wrap: nowrap;

@@ -47,8 +47,8 @@ body header .big-title {
   z-index: 5;
   font-weight: bold;
   /* Setting the gradient */
-  background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
-  background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  background: -webkit-linear-gradient(90deg, #1f11ce 0%, #e52b2b 100%);
+  background: linear-gradient(90deg, #1f11ce 0%, #e52b2b 100%);
   /* Making the background clip to the text for a gradient effect */
   -webkit-background-clip: text;
   background-clip: text;
@@ -105,6 +105,14 @@ body .about {
   background-color: #d5d6e0;
   position: relative;
 }
+body .about .doted-square {
+  position: absolute;
+  width: 400px; /* Set the width of the square */
+  height: 400px; /* Set the height of the square */
+  background-image: radial-gradient(#a49e9e 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-color: rgba(71, 212, 255, 0);
+}
 body .about .shadow {
   position: absolute;
   bottom: 100%;
@@ -134,8 +142,8 @@ body .about .container .content .title {
   position: relative;
   font-weight: bold;
   /* Setting the gradient */
-  background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
-  background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  background: -webkit-linear-gradient(90deg, #1f11ce 0%, #e52b2b 100%);
+  background: linear-gradient(90deg, #1f11ce 0%, #e52b2b 100%);
   /* Making the background clip to the text for a gradient effect */
   -webkit-background-clip: text;
   background-clip: text;
@@ -154,6 +162,7 @@ body .about .container .content .title .border {
 body .about .container .content .text {
   font-size: 2rem;
   color: #000;
+  background-color: #d5d6e0;
 }
 body .about .container .opacity {
   opacity: 0;
@@ -247,8 +256,8 @@ body .header {
   color: #fff;
   font-weight: bold;
   /* Setting the gradient */
-  background: -webkit-linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
-  background: linear-gradient(90deg, #1F11CE 0%, #E52B2B 100%);
+  background: -webkit-linear-gradient(90deg, #1f11ce 0%, #e52b2b 100%);
+  background: linear-gradient(90deg, #1f11ce 0%, #e52b2b 100%);
   /* Making the background clip to the text for a gradient effect */
   -webkit-background-clip: text;
   background-clip: text;
@@ -306,6 +315,15 @@ body .stack[data-duration=fast] {
 }
 body .projects {
   background-color: #d5d6e0;
+  position: relative;
+}
+body .projects .doted-square {
+  position: absolute;
+  width: 400px; /* Set the width of the square */
+  height: 400px; /* Set the height of the square */
+  background-image: radial-gradient(#a49e9e 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-color: rgba(71, 212, 255, 0);
 }
 body .projects .container {
   width: 90%;
@@ -568,38 +586,41 @@ body .contact-form .container-fluid .bg-image {
 }
 @media (max-width: 800px) {
   body header .mountain1 {
-    bottom: -211px;
-    left: -860px;
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
+    height: auto;
     max-width: 100%;
+    bottom: -62px;
+    left: 78px;
   }
   body header .mountain2 {
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
+    height: auto;
     max-width: 100%;
-    bottom: -72px;
+    left: -260px;
+    scale: 0.9;
+    top: 120px;
   }
   body header .mountain3 {
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
+    height: auto;
     max-width: 100%;
-    bottom: 59px;
+    top: 95px;
+    scale: 1.1;
   }
   body header .sky {
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
+    height: auto;
     max-width: 100%;
-    bottom: 247px;
-    left: -579px;
+    top: 5px;
+    scale: 1.1;
   }
   body .about .container {
     grid-template-columns: 1fr;

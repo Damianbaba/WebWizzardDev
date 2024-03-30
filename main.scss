@@ -122,6 +122,15 @@ body {
     background-color: #d5d6e0;
     position: relative;
 
+    .doted-square {
+      position: absolute;
+      width: 400px; /* Set the width of the square */
+      height: 400px; /* Set the height of the square */
+      background-image: radial-gradient(#a49e9e 2px, transparent 2px);
+      background-size: 32px 32px;
+      background-color: rgba(71, 212, 255, 0);
+    }
+
     .shadow {
       position: absolute;
       bottom: 100%;
@@ -179,6 +188,7 @@ body {
         .text {
           font-size: 2rem;
           color: #000;
+          background-color: #d5d6e0;
         }
       }
       .opacity {
@@ -375,11 +385,21 @@ body {
 
   .projects {
     background-color: #d5d6e0;
+    position: relative;
+    .doted-square {
+      position: absolute;
+      width: 400px; /* Set the width of the square */
+      height: 400px; /* Set the height of the square */
+      background-image: radial-gradient(#a49e9e 2px, transparent 2px);
+      background-size: 32px 32px;
+      background-color: rgba(71, 212, 255, 0);
+    }
     .container {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
       padding: 3rem 0;
+
       .row {
         align-items: center;
         height: 100%;
@@ -717,45 +737,45 @@ body {
   body {
     header {
       .mountain1 {
-        bottom: -211px;
-        // width: 1692px;
-        left: -860px;
         padding: 0;
         display: block;
         margin: 0 auto;
-        max-height: 100%;
+        height: auto;
         max-width: 100%;
+        bottom: -62px;
+        left: 78px;
+        // scale: 1.1;
       }
       .mountain2 {
         padding: 0;
         display: block;
         margin: 0 auto;
-        max-height: 100%;
+        height: auto;
         max-width: 100%;
-        // width: 836px;
-        bottom: -72px;
+        left: -260px;
+        scale: 0.9;
+        top: 120px;
       }
       .mountain3 {
         padding: 0;
         display: block;
         margin: 0 auto;
-        max-height: 100%;
+        height: auto;
         max-width: 100%;
-        bottom: 59px;
+        top: 95px;
+        scale: 1.1;
       }
 
       .sky {
         padding: 0;
         display: block;
         margin: 0 auto;
-        max-height: 100%;
+        height: auto;
         max-width: 100%;
-        // width: 1643px;
-        bottom: 247px;
-        left: -579px;
+        top: 5px;
+        scale: 1.1;
       }
     }
-
     .about {
       .container {
         grid-template-columns: 1fr;
@@ -880,14 +900,3 @@ body {
     }
   }
 }
-
-// @media (max-width: 1200px){
-
-//   body{
-//     header{
-//       .big-title{
-//         top: calc(50% - 11rem);
-//       }
-//     }
-//   }
-// }
