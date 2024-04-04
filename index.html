@@ -363,12 +363,61 @@
                       <div class="h3 fw-light">Get In Touch</div>
                       <!-- <p class="mb-4 text-muted"></p> -->
                     </div>
+
+                    <!-- new -->
+
                     <form
+                      id="myForm"
                       method="POST"
-                      action="https://formsubmit.co/damianmroczek@yahoo.com"
                       enctype="multipart/form-data"
                     >
-                      <!-- Name Input -->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          type="text"
+                          name="name"
+                          placeholder="Name"
+                          required
+                        />
+                        <label for="name">Name</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          name="email"
+                          type="email"
+                          placeholder="Email Address"
+                          required
+                        />
+                        <label for="emailAddress">Email Address</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          placeholder="Message"
+                          style="height: 10rem"
+                          required
+                        ></textarea>
+                        <label for="message">Message</label>
+                      </div>
+
+                      <div class="d-grid">
+                        <button class="btn btn-primary btn-lg" type="submit">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+
+                    <!-- end new -->
+
+                    <!-- <form
+                      method="POST"
+                      action="https://formsubmit.co/damianmroczek@yahoo.com"
+                      enctype="multipart/form-data">
+                     
                       <div class="form-floating mb-3">
                         <input
                           class="form-control"
@@ -377,8 +426,7 @@
                         />
                         <label for="name">Name</label>
                       </div>
-
-                      <!-- Email Input -->
+                      
                       <div class="form-floating mb-3">
                         <input
                           class="form-control"
@@ -388,8 +436,7 @@
                         />
                         <label for="emailAddress">Email Address</label>
                       </div>
-
-                      <!-- Message Input -->
+                     
                       <div class="form-floating mb-3">
                         <textarea
                           class="form-control"
@@ -400,14 +447,14 @@
                         ></textarea>
                         <label for="message">Message</label>
                       </div>
-                      <!-- Submit button -->
+                      
                       <div class="d-grid">
                         <button class="btn btn-primary btn-lg" type="submit">
                           Submit
                         </button>
-                        <!-- <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit" href="#">Submit</button> -->
                       </div>
-                    </form>
+                    </form> -->
+
                     <!-- End of contact form -->
                   </div>
                 </div>
@@ -500,5 +547,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="./stack.js"></script>
     <script type="module" src="app.js"></script>
+    <script src="./formsubmit.js"></script>
   </body>
 </html>
