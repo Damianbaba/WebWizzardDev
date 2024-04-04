@@ -317,14 +317,6 @@ body .projects {
   background-color: #d5d6e0;
   position: relative;
 }
-body .projects .doted-square {
-  position: absolute;
-  width: 400px; /* Set the width of the square */
-  height: 400px; /* Set the height of the square */
-  background-image: radial-gradient(#a49e9e 2px, transparent 2px);
-  background-size: 32px 32px;
-  background-color: rgba(71, 212, 255, 0);
-}
 body .projects .container {
   width: 90%;
   max-width: 1200px;

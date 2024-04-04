@@ -104,7 +104,13 @@
 
     <section id="about" class="about padding">
       <!-- <div class="doted-square"></div> -->
-      <div class="doted-square" style="top: 50%; left: 5%"></div>
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        class="doted-square"
+        style="top: 50%; left: 5%"
+      ></div>
       <div class="doted-square" style="top: 10%; right: 5%"></div>
       <div class="shadow"></div>
       <div class="container">
@@ -212,8 +218,8 @@
     <!-- services -->
 
     <div id="service" class="projects padding">
-      <div class="doted-square" style="top: 11%; left: 5%"></div>
-      <div class="doted-square" style="top: 53%; right: 5%"></div>
+      <!-- <div class="doted-square" style="top: 11%; left: 5%"></div>
+      <div class="doted-square" style="top: 53%; right: 5%"></div> -->
       <div class="container">
         <h1 data-aos="fade-left" data-aos-duration="3000" class="header">
           Services
@@ -358,8 +364,9 @@
                       <!-- <p class="mb-4 text-muted"></p> -->
                     </div>
                     <form
-                      action="https://formsubmit.co/damianmroczek@yahoo.com"
                       method="POST"
+                      action="https://formsubmit.co/damianmroczek@yahoo.com"
+                      enctype="multipart/form-data"
                     >
                       <!-- Name Input -->
                       <div class="form-floating mb-3">
@@ -375,6 +382,7 @@
                       <div class="form-floating mb-3">
                         <input
                           class="form-control"
+                          name="email"
                           type="email"
                           placeholder="Email Address"
                         />
@@ -385,6 +393,7 @@
                       <div class="form-floating mb-3">
                         <textarea
                           class="form-control"
+                          name="message"
                           type="text"
                           placeholder="Message"
                           style="height: 10rem"
@@ -393,11 +402,7 @@
                       </div>
                       <!-- Submit button -->
                       <div class="d-grid">
-                        <button
-                          class="btn btn-primary btn-lg"
-                          type="submit"
-                          href=""
-                        >
+                        <button class="btn btn-primary btn-lg" type="submit">
                           Submit
                         </button>
                         <!-- <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit" href="#">Submit</button> -->
