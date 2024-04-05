@@ -476,18 +476,7 @@ body .contact-form .container-fluid .bg-image {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1920px) {
-  body section .container {
-    max-width: 100rem;
-    padding: 0 2rem;
-    margin: 0 auto;
-    column-gap: 5rem;
-  }
-}
-@media (max-width: 1366px) {
-  body header .big-title {
-    top: calc(50% - 15rem);
-  }
+@media only screen and (max-width: 1366px) {
   body header .mountain1 {
     padding: 0;
     display: block;
@@ -542,7 +531,7 @@ body .contact-form .container-fluid .bg-image {
     scale: 0.6;
   }
 }
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
   body header .mountain1 {
     padding: 0;
     display: block;
@@ -576,82 +565,60 @@ body .contact-form .container-fluid .bg-image {
     max-width: 100%;
   }
 }
-@media (max-width: 800px) {
+@media only screen and (max-width: 810px) {
+  body header {
+    background-image: url(./img/mobile/small.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 800px;
+  }
   body header .mountain1 {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    max-width: 100%;
-    bottom: -62px;
-    left: 78px;
+    display: none;
   }
   body header .mountain2 {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    max-width: 100%;
-    left: -260px;
-    scale: 0.9;
-    top: 120px;
+    display: none;
   }
   body header .mountain3 {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    max-width: 100%;
-    top: 95px;
-    scale: 1.1;
+    display: none;
   }
   body header .sky {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    max-width: 100%;
-    top: 5px;
-    scale: 1.1;
+    display: none;
   }
   body .about .container {
     grid-template-columns: 1fr;
     margin: 2rem;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   body header .sky {
-    bottom: -56px;
+    display: none;
   }
   body header .mountain3 {
-    bottom: 144px;
-    left: -431px;
+    display: none;
   }
   body header .mountain2 {
-    bottom: -129px;
+    display: none;
   }
   body header .mountain1 {
-    bottom: -142px;
-    left: -808px;
+    display: none;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   body header .big-title {
-    top: calc(50% - 12rem);
-    font-size: 4.5rem;
+    display: none;
   }
   body header .mountain1 {
-    left: -1056px;
+    display: none;
   }
   body header .mountain2 {
-    bottom: -175px;
+    display: none;
   }
   body header .mountain3 {
-    bottom: 137px;
-    left: -4px;
+    display: none;
   }
   body header .sky {
-    bottom: -74px;
+    display: none;
   }
   body .about .container {
     margin: 0;
@@ -675,23 +642,21 @@ body .contact-form .container-fluid .bg-image {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   body header .big-title {
-    top: calc(50% - 12rem);
-    font-size: 3rem;
+    display: none;
   }
   body header .mountain1 {
-    left: -1229px;
+    display: none;
   }
   body header .mountain2 {
-    bottom: -175px;
+    display: none;
   }
   body header .mountain3 {
-    bottom: 137px;
-    left: -4px;
+    display: none;
   }
   body header .sky {
-    bottom: -74px;
+    display: none;
   }
   body .about .container {
     margin: 0;

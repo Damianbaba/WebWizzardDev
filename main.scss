@@ -604,25 +604,25 @@ body {
 
 //  Media queries
 
-@media screen and (max-width: 1920px) {
-  body {
-    section {
-      .container {
-        max-width: 100rem;
-        padding: 0 2rem;
-        margin: 0 auto;
-        column-gap: 5rem;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 1920px) {
+//   body {
+//     section {
+//       .container {
+//         max-width: 100rem;
+//         padding: 0 2rem;
+//         margin: 0 auto;
+//         column-gap: 5rem;
+//       }
+//     }
+//   }
+// }
 
-@media (max-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   body {
     header {
-      .big-title {
-        top: calc(50% - 15rem);
-      }
+      // .big-title {
+      //   top: calc(50% - 15rem);
+      // }
       .mountain1 {
         padding: 0;
         display: block;
@@ -686,7 +686,7 @@ body {
   }
 }
 
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
   body {
     header {
       .mountain1 {
@@ -733,47 +733,56 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 810px) {
   body {
     header {
+      background-image: url(./img/mobile/small.webp);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 800px;
       .mountain1 {
-        padding: 0;
-        display: block;
-        margin: 0 auto;
-        height: auto;
-        max-width: 100%;
-        bottom: -62px;
-        left: 78px;
-        // scale: 1.1;
+        // padding: 0;
+        // display: block;
+        // margin: 0 auto;
+        // height: auto;
+        // max-width: 100%;
+        // bottom: -62px;
+        // left: 78px;
+        // // scale: 1.1;
+        display: none;
       }
       .mountain2 {
-        padding: 0;
-        display: block;
-        margin: 0 auto;
-        height: auto;
-        max-width: 100%;
-        left: -260px;
-        scale: 0.9;
-        top: 120px;
+        // padding: 0;
+        // display: block;
+        // margin: 0 auto;
+        // height: auto;
+        // max-width: 100%;
+        // left: -260px;
+        // scale: 0.9;
+        // top: 120px;
+        display: none;
       }
       .mountain3 {
-        padding: 0;
-        display: block;
-        margin: 0 auto;
-        height: auto;
-        max-width: 100%;
-        top: 95px;
-        scale: 1.1;
+        // padding: 0;
+        // display: block;
+        // margin: 0 auto;
+        // height: auto;
+        // max-width: 100%;
+        // top: 95px;
+        // scale: 1.1;
+        display: none;
       }
 
       .sky {
-        padding: 0;
-        display: block;
-        margin: 0 auto;
-        height: auto;
-        max-width: 100%;
-        top: 5px;
-        scale: 1.1;
+        // padding: 0;
+        // display: block;
+        // margin: 0 auto;
+        // height: auto;
+        // max-width: 100%;
+        // top: 5px;
+        // scale: 1.1;
+        display: none;
       }
     }
     .about {
@@ -785,46 +794,55 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   body {
     header {
       .sky {
-        bottom: -56px;
+        display: none;
+        // bottom: -56px;
       }
       .mountain3 {
-        bottom: 144px;
-        left: -431px;
+        display: none;
+        // bottom: 144px;
+        // left: -431px;
       }
       .mountain2 {
-        bottom: -129px;
+        display: none;
+        // bottom: -129px;
       }
       .mountain1 {
-        bottom: -142px;
-        left: -808px;
+        display: none;
+        // bottom: -142px;
+        // left: -808px;
       }
     }
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   body {
     header {
       .big-title {
-        top: calc(50% - 12rem);
-        font-size: 4.5rem;
+        display: none;
+        // top: calc(50% - 12rem);
+        // font-size: 4.5rem;
       }
       .mountain1 {
-        left: -1056px;
+        display: none;
+        // left: -1056px;
       }
       .mountain2 {
-        bottom: -175px;
+        display: none;
+        // bottom: -175px;
       }
       .mountain3 {
-        bottom: 137px;
-        left: -4px;
+        display: none;
+        // bottom: 137px;
+        // left: -4px;
       }
       .sky {
-        bottom: -74px;
+        display: none;
+        // bottom: -74px;
       }
     }
 
@@ -859,25 +877,30 @@ body {
   }
 }
 
-@media (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   body {
     header {
       .big-title {
-        top: calc(50% - 12rem);
-        font-size: 3rem;
+        display: none;
+        // top: calc(50% - 12rem);
+        // font-size: 3rem;
       }
       .mountain1 {
-        left: -1229px;
+        display: none;
+        // left: -1229px;
       }
       .mountain2 {
-        bottom: -175px;
+        display: none;
+        // bottom: -175px;
       }
       .mountain3 {
-        bottom: 137px;
-        left: -4px;
+        display: none;
+        // bottom: 137px;
+        // left: -4px;
       }
       .sky {
-        bottom: -74px;
+        display: none;
+        // bottom: -74px;
       }
     }
 
