@@ -617,79 +617,6 @@ body {
 
 //  Media queries
 
-// @media (min-width: 1199.98px) and (max-width: 1399.98px) {
-//   body {
-//     header {
-//       // .big-title {
-//       //   top: calc(50% - 15rem);
-//       // }
-//       .mountain1 {
-//         // padding: 0;
-//         // display: block;
-//         // margin: 0 auto;
-//         // height: auto;
-//         // max-width: 100%;
-//         // bottom: -121px;
-//         // left: 88px;
-//         // scale: 0.9;
-//         display: none;
-//       }
-//       .mountain2 {
-//         // height: auto;
-//         // max-width: 100%;
-//         // top: 260px;
-//         // left: -70px;
-//         // scale: 0.9;
-//         display: none;
-//       }
-//       .mountain3 {
-//         // padding: 0;
-//         // display: block;
-//         // margin: 0 auto;
-//         // height: auto;
-//         // max-width: 100%;
-//         // bottom: 95px;
-//         // right: 0;
-//         // scale: 1;
-//         display: none;
-//       }
-
-//       .sky {
-//         // padding: 0;
-//         // display: block;
-//         // margin: 0 auto;
-//         // height: auto;
-//         // max-width: 100%;
-//         // top: -90px;
-//         // right: 0;
-//         // scale: 1;
-//         display: none;
-//       }
-//     }
-
-//     .about {
-//       .container {
-//         scale: 0.7;
-//       }
-//     }
-
-//     #my-stack {
-//       padding: 0 2rem;
-//       .stack {
-//         scale: 0.5;
-//       }
-//     }
-
-//     .projects {
-//       padding: 0 2rem;
-//       .container {
-//         padding: 0;
-//         scale: 0.6;
-//       }
-//     }
-//   }
-// }
-
 @media (max-width: 1366px) {
   body {
     header {
@@ -697,45 +624,16 @@ body {
       background-position: 50%;
       background-size: cover;
       .mountain1 {
-        // paddiscreen andng: 0;
-        // display: block;
-        // margin: 0 auto;
-        // height: auto;
-        // max-width: 100%;
-        // bottom: -121px;
-        // left: 88px;
-        // scale: 0.9;
         display: none;
       }
       .mountain2 {
-        // height: auto;
-        // max-width: 100%;
-        // top: 260px;
-        // left: -70px;
-        // scale: 0.9;
         display: none;
       }
       .mountain3 {
-        // padding: 0;
-        // display: block;
-        // margin: 0 auto;
-        // height: auto;
-        // max-width: 100%;
-        // bottom: 95px;
-        // right: 0;
-        // scale: 1;
         display: none;
       }
 
       .sky {
-        // padding: 0;
-        // display: block;
-        // margin: 0 auto;
-        // height: auto;
-        // max-width: 100%;
-        // top: -90px;
-        // right: 0;
-        // scale: 1;
         display: none;
       }
     }
@@ -819,49 +717,6 @@ body {
       // background-position: center center;
       // background-repeat: no-repeat;
       // width: 800px;
-      .mountain1 {
-        // padding: 0;
-        // display: block;
-        // margin: 0 auto;
-        // height: auto;
-        // max-width: 100%;
-        // bottom: -62px;
-        // left: 78px;
-        // // scale: 1.1;
-        // display: none;
-      }
-      .mountain2 {
-        // padding: 0;
-        // display: block;
-        // margin: 0 auto;
-        // height: auto;
-        // max-width: 100%;
-        // left: -260px;
-        // scale: 0.9;
-        // top: 120px;
-        // display: none;
-      }
-      .mountain3 {
-        // padding: 0;
-        // display: block;
-        // margin: 0 auto;
-        // height: auto;
-        // max-width: 100%;
-        // top: 95px;
-        // scale: 1.1;
-        // display: none;
-      }
-
-      .sky {
-        // padding: 0;
-        // display: block;
-        // margin: 0 auto;
-        // height: auto;
-        // max-width: 100%;
-        // top: 5px;
-        // scale: 1.1;
-        // display: none;
-      }
     }
     .about {
       .dotted-left {
@@ -896,132 +751,197 @@ body {
   }
 }
 
-// @media (max-width: 768px) {
-//   body {
-//     header {
-//       .sky {
-//         display: none;
-//         // bottom: -56px;
-//       }
-//       .mountain3 {
-//         display: none;
-//         // bottom: 144px;
-//         // left: -431px;
-//       }
-//       .mountain2 {
-//         display: none;
-//         // bottom: -129px;
-//       }
-//       .mountain1 {
-//         display: none;
-//         // bottom: -142px;
-//         // left: -808px;
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: 768px) {
+  body {
+    header {
+      background-image: url(./img/desktop/desktop.webp);
+      background-position: 50%;
+      background-size: cover;
+    }
 
-// @media (max-width: 600px) {
-//   body {
-//     header {
-//       .big-title {
-//         display: none;
-//         // top: calc(50% - 12rem);
-//         // font-size: 4.5rem;
-//       }
-//       .mountain1 {
-//         display: none;
-//         // left: -1056px;
-//       }
-//       .mountain2 {
-//         display: none;
-//         // bottom: -175px;
-//       }
-//       .mountain3 {
-//         display: none;
-//         // bottom: 137px;
-//         // left: -4px;
-//       }
-//       .sky {
-//         display: none;
-//         // bottom: -74px;
-//       }
-//     }
+    .about {
+      .doted-square {
+        display: none;
+      }
+      .container {
+        margin: 0;
+        .content {
+          .title {
+            font-size: 1.9rem;
+          }
+          .text {
+            font-size: 1.4rem;
+          }
+        }
+        .image-container {
+          padding: 0;
+        }
+      }
+    }
 
-//     .about {
-//       .container {
-//         margin: 0;
-//         .content {
-//           .title {
-//             font-size: 2.2rem;
-//           }
-//           .text {
-//             font-size: 1.5rem;
-//           }
-//         }
-//         .image-container {
-//           padding: 0;
-//           margin: 0 auto;
-//           scale: 1.5;
-//         }
-//       }
-//     }
+    .my-stack {
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
 
-//     .projects {
-//       .container {
-//         padding: 2rem 0;
-//         scale: 1;
-//         .row {
-//           grid-template-columns: repeat(1, 1fr);
-//         }
-//       }
-//     }
-//   }
-// }
+    .projects {
+      .container {
+        scale: 0.8;
+        .row {
+          grid-template-columns: repeat(1, 1fr);
+          .card {
+            .cover {
+              .card-back {
+                .description {
+                  .text {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-// @media (max-width: 420px) {
-//   body {
-//     header {
-//       .big-title {
-//         display: none;
-//         // top: calc(50% - 12rem);
-//         // font-size: 3rem;
-//       }
-//       .mountain1 {
-//         display: none;
-//         // left: -1229px;
-//       }
-//       .mountain2 {
-//         display: none;
-//         // bottom: -175px;
-//       }
-//       .mountain3 {
-//         display: none;
-//         // bottom: 137px;
-//         // left: -4px;
-//       }
-//       .sky {
-//         display: none;
-//         // bottom: -74px;
-//       }
-//     }
+@media screen and (max-width: 414px) {
+  body {
+    header {
+    }
 
-//     .about {
-//       .container {
-//         margin: 0;
-//         .image-container {
-//           padding: 0;
-//         }
-//       }
-//     }
+    .about {
+      .container {
+        margin: 0;
+        .image-container {
+          padding: 0;
+        }
+      }
+    }
 
-//     .projects {
-//       .container {
-//         scale: 0.9;
-//         .row {
-//           grid-template-columns: repeat(1, 1fr);
-//         }
-//       }
-//     }
-//   }
-// }
+    .projects {
+      .container {
+        scale: 0.8;
+        .row {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    header {
+      background-image: url(./img/desktop/desktop.webp);
+      background-position: 50%;
+      background-size: cover;
+    }
+
+    .about {
+      .doted-square {
+        display: none;
+      }
+      .container {
+        margin: 0;
+        .content {
+          .title {
+            font-size: 1.9rem;
+          }
+          .text {
+            font-size: 1.4rem;
+          }
+        }
+        .image-container {
+          padding: 0;
+        }
+      }
+    }
+
+    .my-stack {
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
+
+    .projects {
+      .container {
+        scale: 0.8;
+        .row {
+          grid-template-columns: repeat(1, 1fr);
+          .card {
+            .cover {
+              .card-back {
+                .description {
+                  .text {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    header {
+      background-image: url(./img/desktop/desktop.webp);
+      background-position: 50%;
+      background-size: cover;
+      // max-width: 360px;
+    }
+
+    .about {
+      .doted-square {
+        display: none;
+      }
+      .container {
+        margin: 0;
+        .content {
+          .title {
+            font-size: 1.9rem;
+          }
+          .text {
+            font-size: 1.4rem;
+          }
+        }
+        .image-container {
+          padding: 0;
+          scale: 1;
+        }
+      }
+    }
+
+    .my-stack {
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
+
+    .projects {
+      .container {
+        scale: 0.8;
+        .row {
+          grid-template-columns: repeat(1, 1fr);
+          .card {
+            .cover {
+              .card-back {
+                .description {
+                  .text {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
