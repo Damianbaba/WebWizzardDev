@@ -257,7 +257,7 @@ body #my-stack {
   font-size: 1.125rem;
   background-color: #a49e9e;
 }
-body .header {
+body .stack-title {
   text-align: center;
   font-size: clamp(1.5rem, 1.5rem + 1.5vw, 2rem);
   padding: 2rem 0 2rem 0;
@@ -331,7 +331,7 @@ body .projects .container {
   margin: 0 auto;
   padding: 3rem 0;
 }
-body .projects .container .header {
+body .projects .container .projects-title {
   font-size: clamp(1.5rem, 1.5rem + 1.5vw, 3rem);
 }
 body .projects .container .row {
@@ -487,12 +487,7 @@ body .contact-form .container-fluid .bg-image {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 1366px) {
-  body header {
-    background-image: url(./img/desktop/desktop.webp);
-    background-position: 50%;
-    background-size: cover;
-  }
+@media screen and (max-width: 1366px) {
   body header .mountain1 {
     display: none;
   }
@@ -522,9 +517,33 @@ body .contact-form .container-fluid .bg-image {
     scale: 0.6;
   }
 }
-@media screen and (max-width: 1199px) {
-  body header {
-    background-position: 60%;
+@media screen and (max-width: 992px) {
+  body .about .doted-square {
+    display: none;
+  }
+  body .about .container {
+    margin: 0;
+  }
+  body .about .container .content .title {
+    font-size: 1.9rem;
+  }
+  body .about .container .content .text {
+    font-size: 1.4rem;
+  }
+  body .about .container .image-container {
+    padding: 0;
+  }
+  body .my-stack h3 {
+    font-size: 1.6rem;
+  }
+  body .projects .container {
+    scale: 0.8;
+  }
+  body .projects .container .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .projects .container .row .card .cover .card-back .description .text {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 810px) {
@@ -554,11 +573,6 @@ body .contact-form .container-fluid .bg-image {
   }
 }
 @media screen and (max-width: 768px) {
-  body header {
-    background-image: url(./img/desktop/desktop.webp);
-    background-position: 50%;
-    background-size: cover;
-  }
   body .about .doted-square {
     display: none;
   }
@@ -587,6 +601,34 @@ body .contact-form .container-fluid .bg-image {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 600px) {
+  body .about .container {
+    margin: 0;
+  }
+  body .about .container .image-container {
+    padding: 0;
+  }
+  body .projects .container {
+    scale: 0.8;
+  }
+  body .projects .container .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  body .about .container {
+    margin: 0;
+  }
+  body .about .container .image-container {
+    padding: 0;
+  }
+  body .projects .container {
+    scale: 0.8;
+  }
+  body .projects .container .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media screen and (max-width: 414px) {
   body .about .container {
     margin: 0;
@@ -602,11 +644,6 @@ body .contact-form .container-fluid .bg-image {
   }
 }
 @media screen and (max-width: 360px) {
-  body header {
-    background-image: url(./img/desktop/desktop.webp);
-    background-position: 50%;
-    background-size: cover;
-  }
   body .about .doted-square {
     display: none;
   }
@@ -636,11 +673,6 @@ body .contact-form .container-fluid .bg-image {
   }
 }
 @media screen and (max-width: 320px) {
-  body header {
-    background-image: url(./img/desktop/desktop.webp);
-    background-position: 50%;
-    background-size: cover;
-  }
   body .about .doted-square {
     display: none;
   }
