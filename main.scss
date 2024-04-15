@@ -437,7 +437,8 @@ body {
 
           &:hover {
             .cover {
-              transform: rotateX(0deg) rotateY(-180deg);
+              transform:rotateY(-180deg);
+              // transform: rotateX(0deg) rotateY(-180deg);
 
               &:before {
                 transform: translateZ(30px);
@@ -617,12 +618,67 @@ body {
 
 //  Media queries
 
+@media screen and (max-width: 1440px) {
+  body {
+    header {
+      background-image: url(./img/desktop/desktop.webp);
+      background-position: 50%;
+      background-size: cover;
+      .mountain1 {
+        display: none;
+      }
+      .mountain2 {
+        display: none;
+      }
+      .mountain3 {
+        display: none;
+      }
+
+      .sky {
+        display: none;
+      }
+    }
+
+    .about {
+      .container {
+        scale: 0.7;
+      }
+    }
+
+    #my-stack {
+      padding: 0 2rem;
+      .stack {
+        scale: 0.5;
+      }
+    }
+
+    .projects {
+      padding: 0 2rem;
+      .container {
+        padding: 0;
+        scale: 0.8;
+        .row {
+          .cover {
+            .card-back {
+              .description {
+                .text {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1366px) {
   body {
     header {
-      // background-image: url(./img/desktop/desktop.webp);
-      // background-position: 50%;
-      // background-size: cover;
+      background-image: url(./img/desktop/desktop.webp);
+      background-position: 50%;
+      background-size: cover;
       .mountain1 {
         display: none;
       }
@@ -656,6 +712,17 @@ body {
       .container {
         padding: 0;
         scale: 0.6;
+        .row {
+          .cover {
+            .card-back {
+              .description {
+                .text {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -809,11 +876,11 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    // header {
-    //   background-image: url(./img/desktop/desktop.webp);
-    //   background-position: 50%;
-    //   background-size: cover;
-    // }
+    header {
+      // background-image: url(./img/desktop/desktop.webp);
+      background-position: 60%;
+      // background-size: cover;
+    }
 
     .about {
       .doted-square {
@@ -843,9 +910,9 @@ body {
 
     .projects {
       .container {
-        scale: 0.8;
+        scale: 0.9;
         .row {
-          grid-template-columns: repeat(1, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           .card {
             .cover {
               .card-back {
@@ -914,6 +981,7 @@ body {
 
     .about {
       .container {
+        padding: 0;
         margin: 0;
         .image-container {
           padding: 0;
@@ -923,9 +991,22 @@ body {
 
     .projects {
       .container {
-        scale: 0.8;
+        scale: 0.9;
         .row {
           grid-template-columns: repeat(1, 1fr);
+          .card {
+            .cover {
+              .card-back {
+                .description {
+                  .text {
+                    font-size: 0.875rem;
+                    // line-height: 1.2;
+                    // font-size: clamp(1rem, 2vw, 1.25rem);
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -968,7 +1049,7 @@ body {
 
     .projects {
       .container {
-        scale: 0.8;
+        scale: 0.9;
         .row {
           grid-template-columns: repeat(1, 1fr);
           .card {
@@ -1034,7 +1115,7 @@ body {
               .card-back {
                 .description {
                   .text {
-                    font-size: 1rem;
+                    font-size: 0.875rem;
                   }
                 }
               }

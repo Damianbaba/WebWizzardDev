@@ -487,7 +487,50 @@ body .contact-form .container-fluid .bg-image {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1440px) {
+  body header {
+    background-image: url(./img/desktop/desktop.webp);
+    background-position: 50%;
+    background-size: cover;
+  }
+  body header .mountain1 {
+    display: none;
+  }
+  body header .mountain2 {
+    display: none;
+  }
+  body header .mountain3 {
+    display: none;
+  }
+  body header .sky {
+    display: none;
+  }
+  body .about .container {
+    scale: 0.7;
+  }
+  body #my-stack {
+    padding: 0 2rem;
+  }
+  body #my-stack .stack {
+    scale: 0.5;
+  }
+  body .projects {
+    padding: 0 2rem;
+  }
+  body .projects .container {
+    padding: 0;
+    scale: 0.8;
+  }
+  body .projects .container .row .cover .card-back .description .text {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 1366px) {
+  body header {
+    background-image: url(./img/desktop/desktop.webp);
+    background-position: 50%;
+    background-size: cover;
+  }
   body header .mountain1 {
     display: none;
   }
@@ -515,6 +558,9 @@ body .contact-form .container-fluid .bg-image {
   body .projects .container {
     padding: 0;
     scale: 0.6;
+  }
+  body .projects .container .row .cover .card-back .description .text {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -573,6 +619,9 @@ body .contact-form .container-fluid .bg-image {
   }
 }
 @media screen and (max-width: 768px) {
+  body header {
+    background-position: 60%;
+  }
   body .about .doted-square {
     display: none;
   }
@@ -592,10 +641,10 @@ body .contact-form .container-fluid .bg-image {
     font-size: 1.6rem;
   }
   body .projects .container {
-    scale: 0.8;
+    scale: 0.9;
   }
   body .projects .container .row {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   body .projects .container .row .card .cover .card-back .description .text {
     font-size: 1rem;
@@ -631,16 +680,20 @@ body .contact-form .container-fluid .bg-image {
 }
 @media screen and (max-width: 414px) {
   body .about .container {
+    padding: 0;
     margin: 0;
   }
   body .about .container .image-container {
     padding: 0;
   }
   body .projects .container {
-    scale: 0.8;
+    scale: 0.9;
   }
   body .projects .container .row {
     grid-template-columns: repeat(1, 1fr);
+  }
+  body .projects .container .row .card .cover .card-back .description .text {
+    font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 360px) {
@@ -663,7 +716,7 @@ body .contact-form .container-fluid .bg-image {
     font-size: 1.6rem;
   }
   body .projects .container {
-    scale: 0.8;
+    scale: 0.9;
   }
   body .projects .container .row {
     grid-template-columns: repeat(1, 1fr);
@@ -699,7 +752,7 @@ body .contact-form .container-fluid .bg-image {
     grid-template-columns: repeat(1, 1fr);
   }
   body .projects .container .row .card .cover .card-back .description .text {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 
