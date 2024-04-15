@@ -1004,7 +1004,9 @@ body {
 
     .projects {
       .container {
-        scale: 0.9;
+        scale: 1;
+        padding-top: 30px;
+        padding-bottom: 30px;
         .row {
           grid-template-columns: repeat(1, 1fr);
           .card {

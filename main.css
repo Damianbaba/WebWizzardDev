@@ -697,13 +697,18 @@ body .contact-form .container-fluid .bg-image {
     scale: 1.2;
   }
   body .projects .container {
-    scale: 0.9;
+    scale: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   body .projects .container .row {
     grid-template-columns: repeat(1, 1fr);
   }
+  body .projects .container .row .card {
+    height: 340px;
+  }
   body .projects .container .row .card .cover .card-back .description .text {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
   }
 }
 @media screen and (max-width: 360px) {
