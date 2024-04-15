@@ -437,8 +437,8 @@ body {
 
           &:hover {
             .cover {
-              transform:rotateY(-180deg);
-              // transform: rotateX(0deg) rotateY(-180deg);
+              // transform:rotateY(-180deg);
+              transform: rotateX(0deg) rotateY(-180deg);
 
               &:before {
                 transform: translateZ(30px);
@@ -598,6 +598,10 @@ body {
     }
   }
   .contact-form {
+
+     Button{
+        background: #3547cf;
+      }
     // background-image: url('./img/matrix.jpg');
     background-size: cover;
     background-position: center;
@@ -890,10 +894,10 @@ body {
         margin: 0;
         .content {
           .title {
-            font-size: 1.9rem;
+            font-size: 2rem;
           }
           .text {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
           }
         }
         .image-container {
@@ -981,10 +985,19 @@ body {
 
     .about {
       .container {
-        padding: 0;
         margin: 0;
+        padding: 0;
+        .content {
+          .title {
+            font-size: 1.5rem;
+          }
+          .text {
+            font-size: 1.25rem;
+          }
+        }
         .image-container {
           padding: 0;
+          scale: 1.2;
         }
       }
     }
@@ -1015,11 +1028,18 @@ body {
 
 @media screen and (max-width: 360px) {
   body {
-    // header {
-    //   // background-image: url(./img/desktop/desktop.webp);
-    //   // background-position: 50%;
-    //   // background-size: cover;
-    // }
+   header {
+   .navbar{
+    .container{
+      .navbar-brand{
+        font-size: 1.5rem;
+      }
+      .navbar-toggler{
+        font-size: 1.5rem;
+      }
+    }
+   }
+    }
 
     .about {
       .doted-square {
@@ -1029,14 +1049,15 @@ body {
         margin: 0;
         .content {
           .title {
-            font-size: 1.9rem;
+            font-size: 1.35rem;
           }
           .text {
-            font-size: 1.4rem;
+            font-size: 1rem;
           }
         }
         .image-container {
           padding: 0;
+          scale: 1.1;
         }
       }
     }
@@ -1053,11 +1074,13 @@ body {
         .row {
           grid-template-columns: repeat(1, 1fr);
           .card {
+            height: 308px;
             .cover {
               .card-back {
                 .description {
                   .text {
-                    font-size: 1rem;
+                    font-size: 0.650rem;
+                    line-height: 1.7;
                   }
                 }
               }
@@ -1071,12 +1094,18 @@ body {
 
 @media screen and (max-width: 320px) {
   body {
-    // header {
-    //   // background-image: url(./img/desktop/desktop.webp);
-    //   // background-position: 50%;
-    //   // background-size: cover;
-    //   // max-width: 360px;
-    // }
+    header {
+   .navbar{
+    .container{
+      .navbar-brand{
+        font-size: 1.5rem;
+      }
+      .navbar-toggler{
+        font-size: 1.5rem;
+      }
+    }
+   }
+    }
 
     .about {
       .doted-square {
@@ -1086,10 +1115,10 @@ body {
         margin: 0;
         .content {
           .title {
-            font-size: 1.9rem;
+            font-size: 1.25rem;
           }
           .text {
-            font-size: 1.4rem;
+            font-size: 1rem;
           }
         }
         .image-container {
@@ -1100,22 +1129,32 @@ body {
     }
 
     .my-stack {
-      h3 {
+      h3{
         font-size: 1.6rem;
       }
+      .stack{
+        scale: 1 !important;
+      }
+     
+
+
     }
 
     .projects {
       .container {
-        scale: 0.8;
+        padding-top: 30px;
+    padding-bottom: 30px;
+        scale: 1;
         .row {
           grid-template-columns: repeat(1, 1fr);
           .card {
+            height: 276px;
             .cover {
               .card-back {
                 .description {
                   .text {
-                    font-size: 0.875rem;
+                    font-size: 0.6rem;
+                    line-height: 1.7;
                   }
                 }
               }

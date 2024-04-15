@@ -477,6 +477,9 @@ body .contact-form {
   background-position: center;
   background-color: #a49e9e;
 }
+body .contact-form Button {
+  background: #3547cf;
+}
 body .contact-form .container-fluid {
   max-width: 1000px;
 }
@@ -629,10 +632,10 @@ body .contact-form .container-fluid .bg-image {
     margin: 0;
   }
   body .about .container .content .title {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   body .about .container .content .text {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   body .about .container .image-container {
     padding: 0;
@@ -680,11 +683,18 @@ body .contact-form .container-fluid .bg-image {
 }
 @media screen and (max-width: 414px) {
   body .about .container {
-    padding: 0;
     margin: 0;
+    padding: 0;
+  }
+  body .about .container .content .title {
+    font-size: 1.5rem;
+  }
+  body .about .container .content .text {
+    font-size: 1.25rem;
   }
   body .about .container .image-container {
     padding: 0;
+    scale: 1.2;
   }
   body .projects .container {
     scale: 0.9;
@@ -697,6 +707,12 @@ body .contact-form .container-fluid .bg-image {
   }
 }
 @media screen and (max-width: 360px) {
+  body header .navbar .container .navbar-brand {
+    font-size: 1.5rem;
+  }
+  body header .navbar .container .navbar-toggler {
+    font-size: 1.5rem;
+  }
   body .about .doted-square {
     display: none;
   }
@@ -704,13 +720,14 @@ body .contact-form .container-fluid .bg-image {
     margin: 0;
   }
   body .about .container .content .title {
-    font-size: 1.9rem;
+    font-size: 1.35rem;
   }
   body .about .container .content .text {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   body .about .container .image-container {
     padding: 0;
+    scale: 1.1;
   }
   body .my-stack h3 {
     font-size: 1.6rem;
@@ -721,11 +738,21 @@ body .contact-form .container-fluid .bg-image {
   body .projects .container .row {
     grid-template-columns: repeat(1, 1fr);
   }
+  body .projects .container .row .card {
+    height: 308px;
+  }
   body .projects .container .row .card .cover .card-back .description .text {
-    font-size: 1rem;
+    font-size: 0.65rem;
+    line-height: 1.7;
   }
 }
 @media screen and (max-width: 320px) {
+  body header .navbar .container .navbar-brand {
+    font-size: 1.5rem;
+  }
+  body header .navbar .container .navbar-toggler {
+    font-size: 1.5rem;
+  }
   body .about .doted-square {
     display: none;
   }
@@ -733,10 +760,10 @@ body .contact-form .container-fluid .bg-image {
     margin: 0;
   }
   body .about .container .content .title {
-    font-size: 1.9rem;
+    font-size: 1.25rem;
   }
   body .about .container .content .text {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   body .about .container .image-container {
     padding: 0;
@@ -745,14 +772,23 @@ body .contact-form .container-fluid .bg-image {
   body .my-stack h3 {
     font-size: 1.6rem;
   }
+  body .my-stack .stack {
+    scale: 1 !important;
+  }
   body .projects .container {
-    scale: 0.8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    scale: 1;
   }
   body .projects .container .row {
     grid-template-columns: repeat(1, 1fr);
   }
+  body .projects .container .row .card {
+    height: 276px;
+  }
   body .projects .container .row .card .cover .card-back .description .text {
-    font-size: 0.875rem;
+    font-size: 0.6rem;
+    line-height: 1.7;
   }
 }
 
