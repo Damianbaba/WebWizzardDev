@@ -470,7 +470,7 @@ body .projects .container .row .card .card-back .description {
 body .projects .container .row .card .card-back .description .text {
   color: white;
   transform: rotateY(-180deg);
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 body .contact-form {
   background-size: cover;
