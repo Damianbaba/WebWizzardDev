@@ -1,0 +1,43 @@
+.mountain1 {
+  position: absolute;
+  position: absolute;
+  bottom: -175px;
+  /* bottom: -143px; */
+  width: 1920px;
+  /* width: 1483px; */
+  right: -199px;
+  z-index: 19;
+  /* scale: 0.9;
+  }
+
+
+      .mountain2{
+          position: absolute;
+      width: 1920px;
+      /* width: 728px; */
+  bottom: -656px;
+  /* bottom: -171px; */
+  left: -863px;
+  z-index: 18;
+  scale: 0.5;
+}
+
+.mountain3 {
+  position: absolute;
+  width: 1920px;
+  /* width: 1489px; */
+  bottom: 188px;
+  /* bottom: 82px; */
+  right: 0px;
+  z-index: 17;
+  scale: 1.2;
+}
+
+.mountainsky {
+  position: absolute;
+  width: 1920px;
+  top: -19px;
+  /* bottom: 250px; */
+  right: 0;
+  scale: 1.2;
+}/*# sourceMappingURL=header.css.map */
